@@ -1,0 +1,17 @@
+# Xcode & SPM
+.DS_Store
+.build/
+.swiftpm/
+Packages/
+*.xcodeproj
+*.xcworkspace
+xcuserdata/
+
+# Rust
+rust/target/
+
+# Editor / OS
+*.swp
+*~
+.idea/
+.vscode/

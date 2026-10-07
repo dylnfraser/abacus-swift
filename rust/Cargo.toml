@@ -1,0 +1,27 @@
+[package]
+name = "abacus_ffi"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "staticlib"]
+name = "abacus_ffi"
+
+[[bin]]
+name = "uniffi-bindgen"
+path = "uniffi-bindgen.rs"
+
+[dependencies]
+# Depend on local abacus or git repository
+abacus = { path = "../../abacus", features = [
+    "units",
+    "stats",
+    "distributions",
+    "date",
+    "financial",
+    "number-scales",
+    "currencies",
+    "live-rates",
+] }
+uniffi = { version = "0.28", features = ["cli"] }
+thiserror = "1.0"
