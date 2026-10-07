@@ -1,6 +1,6 @@
 # abacus-swift
 
-Swift bindings for [`abacus`](https://github.com/SimplyPickles/abacus), a unit-aware math engine and interval calculator written in Rust.
+Swift bindings for [`abacus`](https://github.com/dylnfraser/abacus), a unit-aware math engine and interval calculator written in Rust.
 
 Supports dimensional analysis, physical unit reduction, interval arithmetic, currency conversions, and relative dates, with Swift concurrency support (`Sendable` / `actor`).
 
@@ -68,7 +68,7 @@ Add the package dependency to `Package.swift`:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/SimplyPickles/abacus-swift.git", from: "0.1.0")
+    .package(url: "https://github.com/dylnfraser/abacus-swift.git", from: "0.1.0")
 ]
 ```
 

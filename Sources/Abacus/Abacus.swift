@@ -10,7 +10,6 @@ extension CalculationResult: @unchecked Sendable, CustomStringConvertible {
 }
 
 extension ResultKind: @unchecked Sendable {}
-extension AbacusFfiError: @unchecked Sendable {}
 
 // MARK: - Abacus (Thread-Safe Wrapper)
 

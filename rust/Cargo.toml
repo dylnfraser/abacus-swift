@@ -12,8 +12,8 @@ name = "uniffi-bindgen"
 path = "uniffi-bindgen.rs"
 
 [dependencies]
-# Depend on local abacus or git repository
-abacus = { path = "../../abacus", features = [
+# Depend on github repository
+abacus = { git = "https://github.com/dylnfraser/abacus", features = [
     "units",
     "stats",
     "distributions",

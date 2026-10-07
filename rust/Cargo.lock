@@ -5,6 +5,7 @@ version = 4
 [[package]]
 name = "abacus"
 version = "0.1.0"
+source = "git+https://github.com/dylnfraser/abacus#dd5fe86bf994d98303c58f773c7cff56744fc404"
 
 [[package]]
 name = "abacus_ffi"
