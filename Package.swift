@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "Abacus",
+    name: "abacus-swift",
     platforms: [
         .macOS(.v13),
         .iOS(.v16)
