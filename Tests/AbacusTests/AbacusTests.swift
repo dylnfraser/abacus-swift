@@ -41,6 +41,17 @@ final class AbacusTests: XCTestCase {
         }
     }
 
+    func testSameDimensionUnitConsolidation() throws {
+        // Mixed prefix consolidation into leading unit powers
+        XCTAssertEqual(try abacus.eval("2342km * m^2"), "0.002342 km^3")
+        XCTAssertEqual(try abacus.eval("2342km * m"), "2.342 km^2")
+        XCTAssertEqual(try abacus.eval("1 m^2 * 2342km"), "2342000 m^3")
+        XCTAssertEqual(try abacus.eval("10 km * 5 m"), "0.05 km^2")
+        XCTAssertEqual(try abacus.eval("5 m * 2 km"), "10000 m^2")
+        XCTAssertEqual(try abacus.eval("2 ft * 6 in"), "1 ft^2")
+        XCTAssertEqual(try abacus.eval("5 h * 30 min"), "2.5 h^2")
+    }
+
     // MARK: - Interval Calculations
 
     func testIntervalCalculations() throws {
