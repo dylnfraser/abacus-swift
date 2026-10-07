@@ -1,0 +1,4 @@
+module abacus_ffiFFI {
+    header "abacus_ffiFFI.h"
+    export *
+}
